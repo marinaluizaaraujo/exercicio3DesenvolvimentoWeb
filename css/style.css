@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #252525;
+    color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+}
+
+#container{
+    width: 99%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
+    padding-top: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header img{
+    width: 10%;
+}
+
+nav{
+    background-color: rgb(145, 26, 5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+ul{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;  
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: rgb(204, 166, 159);
+}
+
+.selecionado{
+    text-decoration: underline;
+}
+
+main{
+    height: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+#box{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding: 1rem;
+}
+
+.caixaImg{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.imagem{
+    width: 100%;
+    border-radius: 2px;
+}
+
+p{
+    height: 100%;
+    width: 60%;
+    padding: 1rem;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-indent: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer{
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    border-top: 1px solid #585353;
+}
+h4{
+    padding-left: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
