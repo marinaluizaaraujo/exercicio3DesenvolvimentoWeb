@@ -4,12 +4,8 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     background-color: #252525;
     color: #FFFFFF;
-    height: 100%;
     width: 100%;
 }
 
@@ -17,31 +13,28 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 1rem;
-    padding-top: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
 }
 
 header img {
-    width: 10%;
+    width: 8%;
 }
 
 nav {
     background-color: rgb(145, 26, 5);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 1rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 ul {
-    padding-left: 1rem;
-    padding-right: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 a {
@@ -50,20 +43,77 @@ a {
     transition: 0.5s;
 }
 
-a:hover{
+a:hover {
     color: rgb(204, 166, 159);
 }
 
-.selecionado{
-    text-decoration: underline;
+.active {
+    color: rgb(204, 166, 159);
 }
 
 main {
-    height: 85%;
+    height: 75vh;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
 }
+
+/* Menu Lateral Inicio  */
+
+.navAside {
+    background-color: rgb(145, 26, 5);
+    width: 25vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.ulAside {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.linkAside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #303030;
+    transition: 0.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.paragrafoAside {
+    padding-left: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+}
+
+.ultimoLink {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.primeiroLink {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.linkAside:hover {
+    background-color: rgb(160, 60, 43);
+}
+
+/* Menu Lateral fim */
 
 #box {
     display: flex;
@@ -102,7 +152,8 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer{
+footer {
+    margin-top: 1rem;
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -110,7 +161,8 @@ footer{
     height: 20%;
     border-top: 1px solid #585353;
 }
-h4{
+
+h4 {
     padding-left: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

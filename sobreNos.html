@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,55 +8,86 @@
     <link rel="icon" href="img/logo_fatec.webp" />
     <title>Sobre Nós</title>
 </head>
+
 <body>
     <header>
-        <img src="img/fateclogo.png" alt="" />
+        <nav>
+            <ul>
+                <img src="img/fateclogo.png" alt="" />
+                <li>
+                    <a href="index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="sobreNos.html" class="active"> Sobre Nós </a>
+                </li>
+                <li>
+                    <a href="cursos.html"> Cursos </a>
+                </li>
+                <li>
+                    <a href="vestibular.html"> Vestibular </a>
+                </li>
+                <li>
+                    <a href="siga.html"> Siga </a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html"> Home </a>
-            </li>
-            <li>
-                <a href="sobreNos.html" class="selecionado"> Sobre Nós </a>
-            </li>
-            <li>
-                <a href="cursos.html"> Cursos </a>
-            </li>
-            <li>
-                <a href="vestibular.html"> Vestibular </a>
-            </li>
-            <li>
-                <a href="siga.html"> Siga </a>
-            </li>
-        </ul>
-    </nav>
     <main>
-        <div id="box">
-            <div class="wrapper">
+        <div class="container">
+            <aside>
+                <nav class="navAside">
+                    <ul class="ulAside">
+                        <a href="index.html" class="linkAside primeiroLink">
+                            <li class="liAside">
+                                <span class="paragrafoAside"> Home </span>
+                            </li>
+                        </a>
+                        <a href="sobreNos.html" class="linkAside active">
+                            <li class="liAside">
+                                <span class="paragrafoAside"> Sobre Nós </span>
+                            </li>
+                        </a>
+                        <a href="cursos.html" class="linkAside">
+                            <li class="liAside">
+                                <span class="paragrafoAside"> Cursos </span>
+                            </li>
+                        </a>
+                        <a href="vestibular.html" class="linkAside">
+                            <li class="liAside">
+                                <span class="paragrafoAside"> Vestibular </span>
+                            </li>
+                        </a>
+                        <a href="siga.html" class="linkAside ultimoLink">
+                            <li class="liAside">
+                                <span class="paragrafoAside"> Siga </span>
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="textAndImage">
                 <img src="img/imgFat.jpg" alt="" class="imagem" />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                    recusandae voluptas, incidunt eos dicta earum, sint suscipit autem
+                    neque doloribus explicabo nobis repellendus unde vel similique
+                    voluptates, odit mollitia quos?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus harum dolores dolore maxime culpa
+                    dicta tempore consectetur, ut, animi ipsum repellat quidem veritatis laboriosam? Aperiam mollitia
+                    aut reprehenderit facere cupiditate!
+                    <br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                    recusandae voluptas, incidunt eos dicta earum, sint suscipit autem
+                    neque doloribus explicabo nobis repellendus unde vel similique
+                    voluptates, odit mollitia quos?
+                </p>
             </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                recusandae voluptas, incidunt eos dicta earum, sint suscipit autem
-                neque doloribus explicabo nobis repellendus unde vel similique
-                voluptates, odit mollitia quos? Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Delectus harum dolores dolore maxime
-                culpa dicta tempore consectetur, ut, animi ipsum repellat quidem
-                veritatis laboriosam? Aperiam mollitia aut reprehenderit facere
-                cupiditate!
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                recusandae voluptas, incidunt eos dicta earum, sint suscipit autem
-                neque doloribus explicabo nobis repellendus unde vel similique
-                voluptates, odit mollitia quos?
-            </p>
         </div>
         <div class="box-reverse">
             <div class="wrapper">
-                <img src="img/fateclogo.png" alt="" class="imagem" />
+                <img src="img/fateclogo.png" alt="" class="segundaImagem" />
             </div>
-            <p>
+            <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                 recusandae voluptas, incidunt eos dicta earum, sint suscipit autem
                 neque doloribus explicabo nobis repellendus unde vel similique
@@ -69,11 +101,12 @@
                 recusandae voluptas, incidunt eos dicta earum, sint suscipit autem
                 neque doloribus explicabo nobis repellendus unde vel similique
                 voluptates, odit mollitia quos?
-            </p>
+            </span>
         </div>
     </main>
     <footer>
         <h4>Todos os direitos reservados. 2025</h4>
     </footer>
 </body>
+
 </html>

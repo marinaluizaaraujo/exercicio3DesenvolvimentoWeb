@@ -3,44 +3,39 @@
     padding: 0;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+body {
     background-color: #252525;
     color: #FFFFFF;
-    height: 100%;
     width: 100%;
 }
-    
-header{
+
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 1rem;
-    padding-top: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    z-index: 1;
 }
 
-header img{
-    width: 10%;
+header img {
+    width: 8%;
 }
 
-nav{
+nav {
     background-color: rgb(145, 26, 5);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 1rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
-ul{
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    list-style: none;  
-    font-size: 20px;
+    align-items: center;
+    list-style: none;
+    font-size: 23px;
 }
 
 a {
@@ -49,50 +44,153 @@ a {
     transition: 0.5s;
 }
 
-a:hover{
+a:hover {
     color: rgb(204, 166, 159);
 }
 
-.selecionado{
-    text-decoration: underline;
+.active {
+    color: rgb(204, 166, 159);
 }
+
+/* Conteudo Principal da Página */
 
 main {
-    height: 85%;
+    height: 125vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
 }
 
-#box {
+.container{
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    align-items: center;
+    width: 100%;
 }
+
+/* Menu Lateral Inicio */
+
+.navAside {
+    background-color: rgb(145, 26, 5);
+    width: 25vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.ulAside {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.linkAside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #303030;
+    transition: 0.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.paragrafoAside {
+    padding-left: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    display: inline;
+}
+
+.ultimoLink {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.primeiroLink {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.linkAside:hover {
+    background-color: rgb(160, 60, 43);
+}
+
+/* Menu Lateral fim */
+
+.textAndImage {
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    width: 80%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.textAndImage:hover {
+    transform: scale(1.05);
+}
+
+.textAndImage:hover P {
+    opacity: 1;
+    top: 50%;
+    background-color: #303030;
+    width: 90%;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.textAndImageVestibular:hover P {
+    opacity: 1;
+    top: 50%;
+    background-color: #303030;
+    width: 60%;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.imagem {
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.imagemVestibular{
+    width: 70%;
+}
+
+.imagem:hover{
+    filter: blur(5px);
+}
+
+/* Segunda div da main */
 
 .box-reverse {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding-top: 1.5rem;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-
-.imagem {
-    width: 100%;
-    border-radius: 2px;
-}
-
-p {
-    height: 100%;
-    width: 60%;
+span{
+    /* height: 100%; */
     padding: 1rem;
     font-size: 18px;
     display: flex;
@@ -101,7 +199,14 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer{
+.segundaImagem{
+    width: 90%;
+}
+
+
+/* Rodapé da Página */
+footer {
+    margin-top: 1rem;
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -109,7 +214,8 @@ footer{
     height: 20%;
     border-top: 1px solid #585353;
 }
-h4{
+
+h4 {
     padding-left: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
