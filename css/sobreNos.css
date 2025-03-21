@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -64,7 +64,7 @@ main {
     margin-right: 2rem;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,16 +152,16 @@ p {
     opacity: 1;
     top: 50%;
     background-color: #303030;
-    width: 90%;
+    width: 60%;
     padding: 2rem;
     border-radius: 10px;
 }
 
-.textAndImageVestibular:hover P {
+.textAndImageSiga:hover P {
     opacity: 1;
     top: 50%;
     background-color: #303030;
-    width: 60%;
+    width: 90%;
     padding: 2rem;
     border-radius: 10px;
 }
@@ -171,12 +171,8 @@ p {
     transition: 1s;
 }
 
-.imagemVestibular{
+.imagemSobreNos {
     width: 70%;
-}
-
-.imagem:hover{
-    filter: blur(5px);
 }
 
 /* Segunda div da main */
@@ -189,7 +185,7 @@ p {
     padding-top: 1.5rem;
 }
 
-span{
+span {
     /* height: 100%; */
     padding: 1rem;
     font-size: 18px;
@@ -199,7 +195,7 @@ span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.segundaImagem{
+.segundaImagem {
     width: 90%;
 }
 
