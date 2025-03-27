@@ -5,8 +5,10 @@
 
 body {
     background-color: #252525;
-    color: #FFFFFF;
+    color: white;
     width: 100%;
+    background-image: url(../img/nuvens.jpg);
+    background-size: cover;
 }
 
 header {
@@ -49,6 +51,7 @@ a:hover {
 
 .active {
     color: rgb(204, 166, 159);
+    text-indent: 10px;
 }
 
 main {
@@ -110,7 +113,8 @@ main {
 }
 
 .linkAside:hover {
-    background-color: rgb(160, 60, 43);
+    background-color: rgb(160, 60, 43, 0.5);
+    text-indent: 10px;
 }
 
 /* Menu Lateral fim */
@@ -158,11 +162,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    height: 10vh;
     border-top: 1px solid #585353;
 }
 
 h4 {
+    font-family: "Boldonse", system-ui;
     padding-left: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

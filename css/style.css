@@ -5,16 +5,19 @@
 
 body {
     background-color: #252525;
-    color: #FFFFFF;
+    color: white;
     width: 100%;
+    background-image: url(../img/nuvens.jpg);
+    background-size: cover;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Lora", serif;
     position: fixed;
+    z-index: 1;
 }
 
 header img {
@@ -23,7 +26,6 @@ header img {
 
 nav {
     background-color: rgb(145, 26, 5);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 1rem;
 }
 
@@ -48,6 +50,7 @@ a:hover {
 
 .active {
     color: rgb(204, 166, 159);
+    text-indent: 10px;
 }
 
 /* Conteudo Principal da Página */
@@ -90,12 +93,11 @@ main {
     align-items: center;
     border-bottom: 1px solid #303030;
     transition: 0.5s;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Lora", serif;
 }
 
 .paragrafoAside {
     padding-left: 1.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 23px;
 }
 
@@ -111,7 +113,8 @@ main {
 }
 
 .linkAside:hover {
-    background-color: rgb(160, 60, 43);
+    background-color: rgb(160, 60, 43, 0.5);
+    text-indent: 10px;
 }
 
 /* Menu Lateral fim */
@@ -125,6 +128,7 @@ main {
 }
 
 p {
+    font-family: "Playfair", serif;
     width: 80%;
     position: absolute;
     top: 100%;
@@ -173,11 +177,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    height: 10vh;
     border-top: 1px solid #585353;
 }
 
 h4 {
     padding-left: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Boldonse", system-ui;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
