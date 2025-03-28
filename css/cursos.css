@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'segundaFonte';
-    src: url("../fonts/cable_dingbats.zip");
+    src: url("../fonts/cable_dingbats/CableDingbats.ttf");
 }
 
 body {
