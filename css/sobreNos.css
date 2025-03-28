@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'terceiraFonte';
+    src: url("../fonts/sunday_midnight.zip");
+}
+
 body {
     background-color: #252525;
     color: white;
@@ -216,7 +221,7 @@ footer {
 
 h4 {
     padding-left: 2rem;
-    font-family: "Boldonse", system-ui;
+    font-family: 'terceiraFonte';
     width: 100%;
     display: flex;
     justify-content: center;

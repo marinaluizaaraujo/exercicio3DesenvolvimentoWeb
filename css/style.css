@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'testandofonte';
+    src: url("../fonts/velista.zip");
+}
+
 body {
     background-color: #252525;
     color: white;
@@ -15,7 +20,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Lora", serif;
+    font-family: 'testandofonte';
     position: fixed;
     z-index: 1;
 }
